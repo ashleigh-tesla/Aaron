@@ -11,7 +11,7 @@
 </head>
 
 <body class="scroll-behavior-smooth">
-    <header class="p-sm-2 header text-center text-white bg-secondary p-3">
+    <header class="p-sm-2 header text-center text-white bg-dark p-5">
         <hgroup class="text-center">
             <p class="h1">Aaron</p>
             <p class="h2">Architect</p>
@@ -37,134 +37,165 @@
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid col-md-6">
-        <picture>
-            <source media="(max-width: 605px)" srcset="static/images/IMG_20210129_1710432.jpg">
-            <source media="(max-width: 1152px)" srcset="static/images/IMG_20210129_1710431.jpg">
-            <img src="static/images/IMG_20210129_1710430.jpg" alt="Aaron @t Zorgvliet" class="img-fluid" width="100%" height="auto">
-        </picture>
+    <div class="container-fluid">
+        <p class="h3 text-center">Architect</p>
+        <div class="row align-items-center justify-content-evenly">
+            <div class="col-sm-6">
+                <div class="card border-dark mb-3" style="min-width: 18rem; max-width: 27rem; width: 100%; height:auto;">
+                    <div class="card-header bg-transparent border-dark">Header</div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Success card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-dark">Footer</div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="carouselExampleIndicator" class="carousel slide m-3" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-sm-7">
+                                    <img src="static/images/IMG-20210730-WA0005.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="col-sm-7">
+                                    <img src="static/images/IMG-20210730-WA0006.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
-    <article class="p-2">
-        <p class="h3">Plans</p>
-        <div id="carouselExampleIndicators" class="carousel slide m-3" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    <div class="container-fluid">
+        <p class="h3 text-center">Houses</p>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 container-fluid align-content-center contain" style="display:flex; justify-content:center; text-align:center; align-items: center;">
+                <div class="cad container-fluid">
+                    <div class="front"><img src="static/images/Screenshot_2021.07.22_14.03.51.252.png" alt="Front" class="img-fluid" width="100%" height="auto"></div>
+                    <div class="back"><img src="static/images/Screenshot_2021.07.24_16.14.21.424.png" alt="Back" class="img-fluid" width="100%" height="auto"></div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <div class="col-sm-7">
-                            <img src="static/images/IMG-20210730-WA0003.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
+            <div class="col-md-6 align-content-center">
+                <div id="carouselExampleIndicators" class="carousel slide m-3" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center">
+                                <div class="">
+                                    <img src="static/images/IMG-20210730-WA0003.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center">
+                                <div class="">
+                                    <img src="static/images/IMG-20210730-WA0004.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="col-sm-7">
-                            <img src="static/images/IMG-20210730-WA0004.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </article>
-    <article class="p-2">
-        <p class="h3">Architect</p>
-        <div id="carouselExampleIndicator" class="carousel slide m-3" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <div class="col-sm-7">
-                            <img src="static/images/IMG-20210730-WA0005.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="col-sm-7">
-                            <img src="static/images/IMG-20210730-WA0006.jpg" class="img-fluid align-middle" alt="..." width="100%" height="auto">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </article>
-    <article class="p-2">
-        <p class="h3">Skills</p>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 p-2">
-                    <img src="static/images/47431462_2277646555805269_6394133206165094400_o.jpg" alt="plan1" class="img-fluid align-middle">
-                </div>
-                <div class="col-sm-6 p-2">
-                    <img src="static/images/47573436_2278116332424958_4407236959433392128_o.jpg" alt="plan2" class="img-fluid align-middle">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 p-2">
-                    <img src="static/images/47573992_2278116362424955_4294878381587038208_o.jpg" alt="plan3" class="img-fluid">
-                </div>
-                <div class="col-sm-6 p-2">
-                    <img src="static/images/47680819_2278116309091627_6432242038665641984_o.jpg" alt="plan4" class="img-fluid">
-                </div>
+    </div>
+
+    <p class="h3 text-center">Skills</p>
+    <div class="container-fluid">
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-sm-4 p-2">
+                <img src="static/images/47573436_2278116332424958_4407236959433392128_o.jpg" alt="plan1" class="img-fluid align-middle">
+            </div>
+            <div class="col-sm-4 p-2">
+                <img src="static/images/47680819_2278116309091627_6432242038665641984_o.jpg" alt="plan2" class="img-fluid align-middle">
             </div>
         </div>
-    </article>
-    <article>
-        <div class="contain">
-            <div class="cad">
-                <div class="front"><img src="static/images/Screenshot_2021.07.22_14.01.40.152.png" alt="Front" class="img-fluid" height="240" width="240"></div>
-                <div class="back"><img src="static/images/Screenshot_2021.07.24_16.14.21.424.png" alt="Back" class="img-fluid" height="240" width="240"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-sm-4 p-2">
+                <img src="static/images/47573992_2278116362424955_4294878381587038208_o.jpg" alt="plan3" class="img-fluid">
+            </div>
+            <div class="col-sm-4 p-2">
+                <img src="static/images/47680819_2278116309091627_6432242038665641984_o.jpg" alt="plan4" class="img-fluid">
             </div>
         </div>
-    </article>
-    <footer class="p-sm-2 header text-center text-white bg-secondary p-3">
+    </div>
+
+    <div class="container-fluid p-2">
+        <div class="row">
+            <div class="col-sm-8">
+                <p>Mechanical Engineer Aaron Manyanye</p>
+                <p>As a soon to be engineer l'm compitent and a versetile team player who is keen to learn more about the engineering world. Engineering has been my passion from a tender age from high school through the studying and my love for Physics and
+                    Mathematics
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <picture>
+                    <source media="(max-width: 605px)" srcset="static/images/IMG_20210129_1710432.jpg">
+                    <source media="(max-width: 1152px)" srcset="static/images/IMG_20210129_1710431.jpg">
+                    <img src="static/images/IMG_20210129_1710430.jpg" alt="Aaron @t Zorgvliet" class="img-fluid" width="100%" height="auto">
+                </picture>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-sm-2 header text-center text-white bg-dark">
         <hgroup class="text-center">
             <p class="h2">Let's Get In Touch</p>
         </hgroup>
-        <div class="row">
+        <div class="row p-3">
             <div class="col">
-                <a href="tel: +27 631 451 765?call" target="_blank"><img class="img-fluid mySocial" src="static/images/old-phone-icon-phone-vector-icon-old-vintage-telephone-symbol-dark-background-old-phone-icon-phone-vector-icon-old-vintage-117069341.jpg" alt="Phone Icon" height="40vw" width="40vw"></a>
+                <a href="skype:live:aaronleeroy1998?chat" target="_blank"><img class="img-fluid mySocial" src="static/images/4102589_applications_media_skype_social_icon.png" alt="Skype Icon" height="40vw" width="40vw" data-bs-toggle="tooltip" data-bs-placement="top" title="Skype"></a>
             </div>
             <div class="col">
-                <a href="https://www.linkedin.com/in/aaron-leeroy-manyanye-8828101a6" target="_blank"><img class="img-fluid mySocial" src="static/images/black-linkedin-icon.png" alt="LinkedIn Icon" height="40" width="40"></a>
+                <a href="tel: +27 735 658 208?chat" target="_self"><img class="img-fluid mySocial" src="static/images/986960_whatsapp_icon.png" alt="WhatsApp Icon" height="40vw" width="40vw" data-bs-toggle="tooltip" data-bs-placement="right" title="WhatsApp"></a>
             </div>
             <div class="col">
-                <a href="skype:live:aaronleeroy1998?chat" target="_blank"><img class="img-fluid mySocial" src="static/images/614780.png" alt="Skype Icon" height="40" width="40"></a>
+                <a href="tel: +27 735 658 208?call" target="_parent"><img class="img-fluid mySocial" src="static/images/old-phone-icon-phone-vector-icon-old-vintage-telephone-symbol-dark-background-old-phone-icon-phone-vector-icon-old-vintage-117069341.jpg" alt="Phone Icon" height="40" width="40" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="Phone"></a>
             </div>
             <div class="col">
-                <a href="mailto:https://www.aaronleeroy1998@gmail.com" target="_blank">
-                    <img class="img-fluid mySocial" src="static/images/mail-icon-in-flat-style-email-symbol-in-flat-style-vector-28061204.jpg" alt="Email" height="40" width="40">
-                </a>
+                <a href="mailto:aaronleeroy1998@gmail.com" target="_self"><img class="img-fluid mySocial" src="static/images/2993691_brand_brands_gmail_logo_logos_icon.png" alt="Email Icon" height="40" width="40" data-bs-toggle="tooltip" data-bs-placement="left" title="Gmail"></a>
+            </div>
+            <div class="col">
+                <a href="https://www.linkedin.com/in/aaron-leeroy-manyanye-8828101a6" target="_blank">
+                    <img class="img-fluid mySocial" src="static/images/317725_linkedin_social_icon.png" alt="LinkedIn" height="40" width="40" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"></a>
             </div>
         </div>
     </footer>
