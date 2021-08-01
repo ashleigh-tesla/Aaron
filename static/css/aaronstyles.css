@@ -1,7 +1,59 @@
-h1 {
-    font-size:10vw;
+.cad {
+    height: 20vw;
+    width: 20vw;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d
 }
-div {
+
+.back,
+.front {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: Lobster, cursive;
+    border-radius: 2vw;
+    position: absolute
+}
+
+.front {
+    z-index: 2;
+    backface-visibility: hidden
+}
+
+.back {
+    z-index: 1;
+    transform: rotateY(180deg)
+}
+
+.contain:hover .cad {
+    transform: rotateY(180deg)
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px
+}
+
+@keyframes socio {
+    0% {
+        height: 3vw;
+        width: 3vw
+    }
+    100% {
+        height: 5vw;
+        width: 5vw
+    }
+}
+
+.mySocial:hover {
+    animation-name: socio;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal
 }
