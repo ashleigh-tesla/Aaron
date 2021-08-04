@@ -337,69 +337,75 @@
                             <h5 class="modal-title" id="exampleModalLabel">Details Form</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
+
                         <div class="modal-body">
-                            Fill in thy Details
-                            <div class="row p-2">
-                                <div class="col-6">
-                                    <label class="label-input">First Name:</label>
-                                    <input type="text" class="form-control" placeholder="Jack">
-                                </div>
-                                <div class="col-6">
-                                    <label class="label-input">Last Name:</label>
-                                    <input type="text" class="form-control" placeholder="Sparrow">
-                                </div>
-                            </div>
                             <div>
-                                <label class="label-input">Email:</label>
-                                <input type="email" class="form-control" placeholder="einstein1921@gmail.com">
-                            </div>
-                            <div class="p-2">
-                                <label for="gender">Gender:</label>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gender" id="gender">
-                                    <label class="form-check-label" for="gender">
-                                    Male
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gender" id="gender" checked>
-                                    <label class="form-check-label" for="gender">
-                                    Other
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gender" id="gender">
-                                    <label class="form-check-label" for="gender">
-                                    Female
-                                </label>
-                                </div>
-                            </div>
-                            <div class="p-2">
-                                <label class="label-input">Comments:</label>
-                                <textarea class="form-control" placeholder="Comment on my Digital Resume"></textarea>
-                            </div>
-                            <div class="p-2">
-                                <label for="customRange2" class="form-label">Rate My Service:</label>
-                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
-                            </div>
-                            <div class="p-2">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                    Would love us to design thy house and plan
-                                </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                    Not satisfied with achitecture and design
-                                </label>
-                                </div>
+                                <div id="error_message"></div>
+                                Fill in thy Details
+                                <form id="myform" onsubmit="return validate();">
+                                    <div class="row p-2">
+                                        <div class="col-6">
+                                            <label class="label-input">First Name:</label>
+                                            <input type="text" class="form-control" placeholder="Jack" id="name">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="label-input">Last Name:</label>
+                                            <input type="text" class="form-control" placeholder="Sparrow" id="name">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="label-input">Email:</label>
+                                        <input type="email" class="form-control" placeholder="einstein1921@gmail.com" id="email">
+                                    </div>
+                                    <div class="p-2">
+                                        <label for="gender">Gender:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gender" id="gender">
+                                            <label class="form-check-label" for="gender">
+                                            Male
+                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gender" id="gender" checked>
+                                            <label class="form-check-label" for="gender">
+                                            Other
+                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gender" id="gender">
+                                            <label class="form-check-label" for="gender">
+                                            Female
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <label class="label-input">Comments:</label>
+                                        <textarea class="form-control" placeholder="Comment on my Digital Resume" id="message"></textarea>
+                                    </div>
+                                    <div class="p-2">
+                                        <label for="customRange2" class="form-label">Rate My Service:</label>
+                                        <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked disabled>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                            Would love us to design thy house and plan
+                                        </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                            Not satisfied with achitecture and design
+                                        </label>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="input" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-success" action="action.php">Save & Submit</button>
+                            <button type="input" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                            <input type="submit" class="btn btn-outline-success" data-bs-dismiss="mod" value="Submit">
                         </div>
                     </div>
                 </div>
@@ -417,7 +423,7 @@
 
         <footer class="p-sm-2 header text-center text-white bg-dark">
             <hgroup class="text-center">
-                <p class="h2 text-center" id="socialMedia">Let's Get In Touch</p>
+                <p class="h2 text-center p-2" id="socialMedia">Let's Get In Touch</p>
             </hgroup>
             <div class="row p-3">
                 <div class="col">
