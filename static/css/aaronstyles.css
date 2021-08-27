@@ -4,11 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    font-family: 'Josefin Sans', sans-serif
 }
 
 body {
-    background: #fece0c
+    color: rgb(0, 0, 255);
+    font-weight: 700;
+    padding: 0;
 }
 
 .wrapper {
