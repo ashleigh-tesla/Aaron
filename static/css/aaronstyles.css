@@ -4,11 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    font-family: 'Josefin Sans', sans-serif
 }
 
 body {
-    background: #fece0c
+    color: darkolivegreen;
+    font-weight: 700;
+    padding: 0;
 }
 
 .wrapper {
@@ -77,8 +78,8 @@ body {
 }
 
 .cad {
-    height: 40vw;
-    width: 40vw;
+    height: 45vw;
+    width: 45vw;
     position: relative;
     transition: all 1s linear;
     transform-style: preserve-3d
@@ -115,7 +116,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px
+    perspective: 1000000px
 }
 
 @keyframes socio {
