@@ -77,8 +77,8 @@ body {
 }
 
 .cad {
-    height: 40vw;
-    width: 40vw;
+    height: 45vw;
+    width: 45vw;
     position: relative;
     transition: all 1s linear;
     transform-style: preserve-3d
@@ -115,7 +115,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px
+    perspective: 1000000px
 }
 
 @keyframes socio {
