@@ -20,7 +20,7 @@ function validate() {
         error_message.innerText = text;
         return false;
     }
-    if (service == 'null') {
+    if (service == "null") {
         text = "Good Day Sir / Madam \n\nHow Can I Help You? \n\nPlease Enter Thy Required Service";
         error_message.innerText = text;
         return false;
