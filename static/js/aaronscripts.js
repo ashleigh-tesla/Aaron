@@ -1,7 +1,7 @@
 function validate() {
     var name = document.querySelector("#name").value;
     var subject = document.querySelector("#subject").value;
-    var service = document.querySelector("#services").value;
+    var service = document.querySelector("#service").value;
     var phone = document.querySelector("#phone").value;
     var email = document.querySelector("#email").value;
     var message = document.querySelector("#message").value;
@@ -20,7 +20,7 @@ function validate() {
         error_message.innerText = text;
         return false;
     }
-    if (service = ' ') {
+    if (service == 'null') {
         text = "Good Day Sir / Madam \n\nHow Can I Help You? \n\nPlease Enter Thy Required Service";
         error_message.innerText = text;
         return false;
@@ -31,7 +31,7 @@ function validate() {
         return false;
     }
     if (email.indexOf("@") == -1 || email.length < 6) {
-        text = "Please Enter valid Email";
+        text = "Please Enter Valid Email";
         error_message.innerText = text;
         return false;
     }
