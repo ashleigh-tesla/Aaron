@@ -7,7 +7,7 @@
 }
 
 body {
-    color: rgb(30, 45, 15);
+    color: rgba(0, 0, 0, 1.0);
     font-weight: 700;
     padding: 0;
 }
