@@ -34,13 +34,13 @@
                 <input type="text" placeholder="Subject" id="subject">
             </div>
             <div class="input_field">
-                <input type="text" list="services" placeholder="Service" name="browser">
+                <input type="text" list="services" placeholder="Service" name="services" id="service">
                 <datalist id="services">
-                    <option value="Architectural Home Design">Home</option>
-                    <option value="Office Design">Office</option>
-                    <option value="Home Interior Design">Home Interior</option>
-                    <option value="House Plan Design">House Plan</option>
-                    <option value="Home Exterior Design">Home Exterior</option>
+                    <option value="Architectural Home Design">
+                    <option value="Office Design">
+                    <option value="Home Interior Design">
+                    <option value="House Plan Design">
+                    <option value="Home Exterior Design">
                 </datalist>
             </div>
             <div class="input_field">
@@ -48,6 +48,10 @@
             </div>
             <div class="input_field">
                 <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input_field" style="display:flex; justify-content:space-evenly; text-align:center; align-items: center;">
+                <label for="CUSTOMER">Are You An Existing Customer?</label>
+                <input type="radio" id="yes" name="CUSTOMER" value="YES">   <label for="yes">YES</label>   <input type="radio" id="no" name="CUSTOMER" value="NO">   <label for="no">NO</label>
             </div>
             <div class="input_field">
                 <textarea placeholder="Message" id="message"></textarea>

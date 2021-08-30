@@ -12,12 +12,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 350px;
+    max-width: 30%;
     width: 100%;
     background: #fff;
     padding: 25px;
     border-radius: 5px;
     border: 1px solid lawngreen;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        max-width: fit-content;
+        width: 100%;
+        min-width: 80%;
+    }
 }
 
 .wrapper h2 {
@@ -35,7 +43,8 @@
 .wrapper .input_field input[type=text],
 .wrapper .input_field input,
 .wrapper select,
-.wrapper textarea {
+.wrapper textarea,
+.wrapper .input_field input[type=radio] {
     border: 0.005vw solid #000;
     width: 100%;
     padding: 10px
@@ -63,7 +72,7 @@
 
 #error_message {
     margin-bottom: 20px;
-    background: #fe8b8e;
+    background: coral;
     padding: 0;
     text-align: center;
     font-size: 14px;
