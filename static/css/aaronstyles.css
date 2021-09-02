@@ -105,11 +105,11 @@ body {
 
 .back {
     z-index: 1;
-    transform: rotateY(180deg)
+    transform: rotateX(180deg)
 }
 
 .contain:hover .cad {
-    transform: rotateY(180deg)
+    transform: rotateX(180deg)
 }
 
 .contain {
